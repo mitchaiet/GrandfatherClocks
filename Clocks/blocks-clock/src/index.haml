@@ -1,0 +1,23 @@
+.wrapper
+  .clock
+    .clock__number.hours
+      .digit.digit__0
+        - (1..15).each do |k|
+          .pixel{class: "pixel_#{k}" }
+          
+      .digit.digit__0
+        - (1..15).each do |k|
+          .pixel{ class: "pixel_#{k}" }
+    
+    .points
+      - (1..5).each do |i|
+        .point
+      
+    .clock__number.minutes
+      .digit.digit__0
+        - (1..15).each do |k|
+          .pixel{ class: "pixel_#{k}" }
+
+      .digit.digit__0
+        - (1..15).each do |k|
+          .pixel{ class: "pixel_#{k}" }
